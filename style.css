@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  line-height: 2.2;
+  background-color: #99f3bd;
+}
+
+.container {
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.header {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.form-control {
+  width: 35rem;
+  height: 2.5rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.input-radio, .input-checkbox {
+  margin: 1em;
+}
+
+#title {
+  font-weight: 500;
+  opacity: .8;
+}
+#description {
+  padding-bottom: 2em;
+  padding-top: 1em;
+  font-weight: 400;
+}
+
+#survey-form {
+  background: pink;
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+.input-textarea {
+  width: 40rem;
+  height: 10rem;
+}
+
+.submit-button {
+  font-weight: 500;
+  font-family: 'Roboto Mono', monospace;
+  width: 24rem;
+  height: 4rem;
+  background: #99f3bd;
+  border-radius: 2px;
+  cursor: pointer;
+}

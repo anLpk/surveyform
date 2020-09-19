@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title">Travel Survey Form</h1>
+      <p id="description">Will you travel straight after Covid-19 ends?<br> How long will it take for you to consider travelling again and which countries best suit your plans?</p>
+    </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label> <br>
+        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label> <br>
+        <input class="form-control" id="email" type="email" name="email" placeholder="Enter your Email" required>
+      </div>
+
+      <div class="form-group">
+        <label id="number-label" for="">Age <span>(optional)</span></label> <br>
+        <input class="form-control" id="number" type="number" name="number" min="18" max="99" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <p>Which option best describes your current job?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select current role</option>
+          <option value="job">Full Time Job</option>
+          <option value="learner">Part Time Job</option>
+          <option value="student">Student</option>
+          <option value="preferNo">Unemployed</option>
+          <option value="preferNo">Other</option>
+          <option value="other">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>When would you start travelling again?</p>
+        <label><input name="user-recommend" value="inthreemonths" type="radio" class="input-radio" checked />in 3 months</label>
+        <label><input name="user-recommend" value="insixmonths" type="radio" class="input-radio" />3-6 months</label>
+        <label><input name="user-recommend" value="inayear" type="radio" class="input-radio" />6-12months</label>
+        <label><input name="user-recommend" value="morethanayear" type="radio" class="input-radio" />+1 year</label>
+      </div>
+
+      <div class="form-group">
+        <p>
+          What was your favorite travel destination before Covid-19?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Favorite Destination</option>
+          <option value="usa">USA</option>
+          <option value="China">China</option>
+          <option value="Endonesia">Endonesia</option>
+          <option value="Europe">Europe</option>
+          <option value="Australia">Australia</option>
+          <option value="Turkey">Turkey</option>
+          <option value="India">India</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Japan">Japan</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>
+          Where would like to tavel next?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+
+        <label><input name="prefer" value="USA" type="checkbox" class="input-checkbox" />USA</label>
+        <label><input name="prefer" value="China" type="checkbox" class="input-checkbox" />China</label>
+        <label><input name="prefer" value="Europe" type="checkbox" class="input-checkbox" />Europe</label><br>
+        <label><input name="prefer" value="Turkey" type="checkbox" class="input-checkbox" />Turkey</label>
+        <label><input name="prefer" value="India" type="checkbox" class="input-checkbox" />India</label>
+        <label><input name="prefer" value="Russia" type="checkbox" class="input-checkbox" />Russia</label><br>
+        <label><input name="prefer" value="Japan" type="checkbox" class="input-checkbox" />New Zeland</label>
+        <label><input name="prefer" value="Brazil" type="checkbox" class="input-checkbox" />Brazil</label>
+        <label><input name="prefer" value="Australia" type="checkbox" class="input-checkbox" />Australia</label> <br>
+        <label><input name="prefer" value="New Zeland" type="checkbox" class="input-checkbox" />Japan</label>
+        <label><input name="prefer" value="somewhereelse" type="checkbox" class="input-checkbox" />Some where else</label>
+        <label><input name="prefer" value="nevertravel" type="checkbox" class="input-checkbox" />Never Travel Again!</label>
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <button onclick="multiplyBy()" type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <script type="text/javascript">
+    submit.addEventListener('click', (event) => {
+      event.target.textContent = 'Thank You!';
+    });
+  </script>
+</body>
+
+</html>
